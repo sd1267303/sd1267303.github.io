@@ -7,7 +7,7 @@ var mouth1 = document.getElementById('ctrlBtn5')
 var mouth2 = document.getElementById('ctrlBtn6')
 var coat1 = document.getElementById('ctrlBtn7')
 var coat2 = document.getElementById('ctrlBtn8')
-var only = document.getElementById('only')
+var print = document.getElementById('print')
 var timer = null , falg = false;
 
 var myPic0 = ["eyes/eye (1).png","eyes/eye (2).png","eyes/eye (3).png",
@@ -141,7 +141,7 @@ btn.onclick = function(){
 	}
 }
 ///////////////截图按钮
-only.onclick = function(){ 
+print.onclick = function(){ 
 	// screenMask();
 	html2canvas(document.querySelector("#main")).then(function(canvas) {
 		var dataUrl = canvas.toDataURL();
