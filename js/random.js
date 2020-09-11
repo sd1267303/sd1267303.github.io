@@ -57,9 +57,9 @@ function randomPic5(){
 	var randomNum5 = Math.floor((Math.random()*myPic5.length));
 	document.getElementById('blushPics').src = myPic5[randomNum5];
 }
-function screenMask(){
-	document.getElementById("mask").setAttribute("display","block");
-}
+// function screenMask(){
+// 	document.getElementById("mask").setAttribute("display","block");
+// }
 /////////////////换眼睛图片按钮
 var countHair=0;
 var countEye=0;
@@ -142,7 +142,7 @@ btn.onclick = function(){
 }
 ///////////////截图按钮
 only.onclick = function(){ 
-	screenMask();
+	// screenMask();
 	html2canvas(document.querySelector("#main")).then(function(canvas) {
 		var dataUrl = canvas.toDataURL();
 		var newImg = document.createElement("img");
