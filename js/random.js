@@ -143,7 +143,7 @@ btn.onclick = function(){
 ///////////////截图按钮
 only.onclick = function(){ 
 	screenMask();
-	html2canvas(document.querySelector("#btn")).then(function(canvas) {
+	html2canvas(document.querySelector("#main")).then(function(canvas) {
 		var dataUrl = canvas.toDataURL();
 		var newImg = document.createElement("img");
 		newImg.src =  dataUrl;
