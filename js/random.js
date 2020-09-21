@@ -150,29 +150,3 @@ print.onclick = function(){
 		document.querySelector("#pic").appendChild(newImg);
 	});   
 };   
-//////////////预加载
-///var preload = new createjs.LoadQueue(true);
-var mainfest = [
-  { src: "eyes/eye (1).png","eyes/eye (2).png","eyes/eye (3).png",
-			"eyes/eye (4).png","eyes/eye (5).png","eyes/eye (6).png",
-			"eyes/eye (7).png","eyes/eye (8).png","eyes/eye (9).png",
-			"eyes/eye (10).png","eyes/eye (11).png" },
-  { src: "hairs/hair (1).png","hairs/hair (2).png","hairs/hair (3).png",
-			"hairs/hair (4).png","hairs/hair (5).png","hairs/hair (6).png",
-			"hairs/hair (7).png","hairs/hair (8).png","hairs/hair (9).png",
-			"hairs/hair (10).png","hairs/hair (11).png","hairs/hair (12).png",
-			"hairs/hair (13).png","hairs/hair (14).png","hairs/hair (15).png",
-			"hairs/hair (16).png","hairs/hair (17).png","hairs/hair (18).png",
-			"hairs/hair (19).png" },
-  { src: "mouths/mouth (1).png","mouths/mouth (2).png","mouths/mouth (3).png",
-			"mouths/mouth (4).png","mouths/mouth (5).png","mouths/mouth (6).png",
-			"mouths/mouth (7).png","mouths/mouth (8).png","mouths/mouth (9).png", },
-  { src: "coats/coat (1).png","coats/coat (2).png","coats/coat (3).png",
-			"coats/coat (4).png","coats/coat (5).png","coats/coat (6).png",
-			"coats/coat (7).png","coats/coat (8).png" },
-  { src: "blushes/blush (1).png","blushes/blush (2).png","blushes/blush (3).png",
-			"blushes/blush (4).png","blushes/blush (5).png","blushes/blush (6).png"},
-  { src: "noses/nose (1).png","noses/nose (2).png","noses/nose (3).png",
-			"noses/nose (4).png"},
-];
-preload.startPreload();
