@@ -509,7 +509,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  min-height: 120px;
+  min-height: 80px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -573,26 +573,32 @@
 .lottie-animation {
   width: 80px;
   height: 80px;
-  margin-left: 24px;
+  margin-bottom: -8px;
+  margin-left: 16px;
+  padding-bottom: 0px;
 }
 
 .lottie-animation-2 {
   width: 80px;
   height: 80px;
-  margin-left: 24px;
+  margin-bottom: -8px;
+  margin-left: 16px;
 }
 
 .text-block-2 {
   margin-right: 32px;
+  margin-bottom: 0px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
+  color: #6d7187;
+  font-size: 16px;
   font-weight: 500;
 }
 
 .lottie-animation-3 {
   width: 80px;
   height: 80px;
-  margin-left: 24px;
+  margin-bottom: -8px;
+  margin-left: 16px;
 }
 
 .columns {
@@ -615,7 +621,7 @@
   margin: 0px 28px 12px;
   padding-right: 0px;
   padding-left: 0px;
-  border-style: none none solid;
+  border-style: none;
   border-width: 1px;
   border-color: #000 #000 #e9e9e9;
   font-size: 18px;
@@ -629,19 +635,38 @@
   min-height: 120px;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 0px;
-  padding-left: 16px;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border: 1px none #e9e9e9;
+  padding: 24px 0px 24px 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e4ebf1;
   border-radius: 12px;
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: #fafafa;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+  -o-object-fit: fill;
+  object-fit: fill;
+}
+
+.card1:hover {
+  overflow: visible;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  box-shadow: 0 8px 3px -6px rgba(0, 0, 0, 0.08);
 }
 
 .columns-2 {
@@ -649,6 +674,16 @@
   margin-left: 0px;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.textblock1 {
+  margin-bottom: 10px;
+  color: #1f243d;
+  font-size: 16px;
+}
+
+.sum {
+  color: #474d6b;
 }
 
 @media screen and (max-width: 767px) {
