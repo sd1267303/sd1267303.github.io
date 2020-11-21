@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <!-- <div id="mask" class="mask"></div> -->
+            <div class="ctrl">
+                <button id="ctrlBtn1" class="ctrlBtn">HAIR-</button>
+                <button id="ctrlBtn2" class="ctrlBtn">HAIR+</button>
+            </div>
+            <div class="ctrl" style="top:12vh;width: 85%;" >
+                <button id="ctrlBtn3" class="ctrlBtn">EYE-</button>
+                <button id="ctrlBtn4" class="ctrlBtn">EYE+</button>
+            </div>
+            <div class="ctrl" style="top:24vh;width: 85%;" >
+                <button id="ctrlBtn5" class="ctrlBtn">MOUTH-</button>
+                <button id="ctrlBtn6" class="ctrlBtn">MOUTH+</button>
+            </div>
+            <div class="ctrl" style="top:36vh;" >
+                <button id="ctrlBtn7" class="ctrlBtn">COAT-</button>
+                <button id="ctrlBtn8" class="ctrlBtn">COAT+</button>
+            </div>
+        <div class="bgShape">
+        </div>
+        <div id="main" class="main">
+            <img src="Maker.png"             style="transform:translate(-140px,-140px) scale(0.5); z-index: 0" alt="" id="bodyPics">
+            <img src="eyes/eye (1).png"      style="transform:translate(88px,116px) scale(0.5);margin:-40px -66px;  z-index: 3" alt="" id="eyePics" >
+            <img src="mouths/mouth (3).png"  style="transform:translate(123px,178px)scale(0.5);margin:-16px -32px;  z-index: 1" alt="" id="mouthPics">
+            <img src="hairs/hair (11).png"   style="transform:translate(-153px,-143px)scale(0.5);z-index: 2" alt="" id="hairPics" >
+            <img src="coats/coat (1).png"    style="transform:translate(33px,214px);  z-index: 1" alt="" id="coatPics" >
+            <img src="noses/nose (1).png"    style="transform:translate(138px,152px); z-index: 0" alt="" id="nosePics" >
+            <img src="blushes/blush (1).png" style="transform:translate(60px,166px);  z-index: 0" alt="" id="blushPics" >
+        </div>
+        <div class="bottom">
+            <button id="print"class="ctrlBtn" style="padding:15px 2px;min-width: 80px;"><svg t="1599804632964" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7557" width="36" height="36"><path d="M234.666667 128c0-34.133333 29.866667-64 64-64h426.666666c34.133333 0 64 29.866667 64 64v85.333333c0 12.8-8.533333 21.333333-21.333333 21.333334H256c-12.8 0-21.333333-8.533333-21.333333-21.333334V128zM277.333333 746.666667c0-25.6 17.066667-42.666667 42.666667-42.666667h384c25.6 0 42.666667 17.066667 42.666667 42.666667V896c0 25.6-17.066667 42.666667-42.666667 42.666667h-384c-25.6 0-42.666667-17.066667-42.666667-42.666667v-149.333333z" fill="#999" p-id="7558"></path><path d="M768 298.666667H256c-119.466667 0-213.333333 93.866667-213.333333 213.333333v213.333333c0 46.933333 38.4 85.333333 85.333333 85.333334h85.333333v-128c0-25.6 17.066667-42.666667 42.666667-42.666667h512c25.6 0 42.666667 17.066667 42.666667 42.666667v128h85.333333c46.933333 0 85.333333-38.4 85.333333-85.333334v-213.333333c0-119.466667-93.866667-213.333333-213.333333-213.333333z m-230.4 234.666666c-29.866667 0-46.933333-17.066667-46.933333-42.666666s17.066667-42.666667 42.666666-42.666667h4.266667c25.6 0 42.666667 17.066667 42.666667 42.666667s-17.066667 42.666667-42.666667 42.666666z m230.4 0h-85.333333c-25.6 0-42.666667-17.066667-42.666667-42.666666s17.066667-42.666667 42.666667-42.666667h85.333333c25.6 0 42.666667 17.066667 42.666667 42.666667s-17.066667 42.666667-42.666667 42.666666z" fill="#999" p-id="7559"></path></svg></button>
+            <a id="btn" style="margin-left:24px;">RANDOM</a>
+        </div>
+        <img src="logo.png" style="position: absolute; width: 314px; height: 62px; margin-top: 56px; z-index: 2" alt="" >
+        <div id="pic"style="position: absolute;margin-left:-32vw;margin-top: 16vh; width:10px; height:10px; background-color:rgba(255,255,255,0.01);z-index: 5;">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/html2canvas.min.js"></script>
+        <script src="js/random.js" ></script>
+        <script src="js/ripple.js" ></script>
+        <script src="js/preloadjs.min.js"></script>
+        <script type="text/javascript">
+                //预加载
+                var preload = new createjs.LoadQueue(true);
+                var mainfest = [
+                  { src: "eyes/eye (1).png"},{ src: "eyes/eye (2).png"},{ src: "eyes/eye (3).png"},{ src: "eyes/eye (4).png"},{ src: "eyes/eye (5).png"},
+                  { src: "eyes/eye (6).png"},{ src: "eyes/eye (7).png"},{ src: "eyes/eye (8).png"},{ src: "eyes/eye (9).png"},{ src: "eyes/eye (10).png"},
+                  { src: "eyes/eye (11).png"},
+
+                  { src: "hairs/hair (1).png"},{ src: "hairs/hair (2).png"},{ src: "hairs/hair (3).png"},{ src: "hairs/hair (4).png"},{ src: "hairs/hair (5).png"},
+                  { src: "hairs/hair (6).png"},{ src: "hairs/hair (7).png"},{ src: "hairs/hair (8).png"},{ src: "hairs/hair (9).png"},{ src: "hairs/hair (10).png"},
+                  { src: "hairs/hair (11).png"},{ src: "hairs/hair (12).png"},{ src: "hairs/hair (13).png"},{ src: "hairs/hair (14).png"},{ src: "hairs/hair (15).png"},
+                  { src: "hairs/hair (16).png"},{ src: "hairs/hair (17).png"},{ src: "hairs/hair (18).png"},{ src: "hairs/hair (19).png"},
+                  
+                  { src: "mouths/mouth (1).png"},{ src: "mouths/mouth (2).png"},{ src: "mouths/mouth (3).png"},{ src: "mouths/mouth (4).png"},{ src: "mouths/mouth (5).png"},
+                  { src: "mouths/mouth (6).png"},{ src: "mouths/mouth (7).png"},{ src: "mouths/mouth (8).png"},{ src: "mouths/mouth (9).png"},
+
+                  { src: "coats/coat (1).png"},{ src: "coats/coat (2).png"},{ src: "coats/coat (3).png"},{ src: "coats/coat (4).png"},{ src: "coats/coat (5).png"},
+                  { src: "coats/coat (6).png"},{ src: "coats/coat (7).png"},{ src: "coats/coat (8).png"},
+
+                  { src: "blushes/blush (1).png"},{ src: "blushes/blush (2).png"},{ src: "blushes/blush (3).png"},{ src: "blushes/blush (4).png"},
+                  { src: "blushes/blush (5).png"},{ src: "blushes/blush (6).png"},
+
+                  { src: "noses/nose (1).png"},{ src: "noses/nose (2).png"},{ src: "noses/nose (3).png"},{ src: "noses/nose (4).png"},
+                ];
+                //加载队列变化时的回调
+                preload.addEventListener("progress", handleFileProgress);
+                //加载全部完成时的回调
+                preload.addEventListener("complete", loadComplete);
+                function handleFileProgress(){
+                    console.log('加载完毕其一')
+                }
+                function loadComplete(){
+                    console.log('全体加载完成')
+                }
+                preload.loadManifest(mainfest);
+
+        </script>
+    </body>
+</html>
